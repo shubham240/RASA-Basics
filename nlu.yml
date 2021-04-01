@@ -1,0 +1,29 @@
+version: "2.0"
+
+nlu:
+- intent: places
+  examples: |
+    - Agra
+    - New Delhi
+    - Bangalore
+    - Gujarat
+
+- intent: ask_flight
+  examples: |
+    - I need to book a flight
+
+- intent: ask_hotel
+  examples: |
+    - I need to book a Hotel
+
+- intent: ask_cab
+  examples: |
+    - I need to book a Cab
+
+- intent: date
+  examples: |
+    - 10 Jan
+
+- intent: days
+  examples: |
+    - 3 days

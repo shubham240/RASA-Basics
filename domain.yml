@@ -1,0 +1,41 @@
+version: "2.0"
+
+intents:
+  - places
+  - ask_flight
+  - ask_hotel
+  - ask_cab
+  - date
+  - days
+  - goodbye
+  - bot_challenge
+
+actions:
+  - utter_city_going
+  - utter_city_leaving
+  - utter_date
+  - utter_greet
+  - utter_duration
+  - utter_iamabot
+  - utter_goodbye
+
+responses:
+  utter_greet:
+  - text: "Thanks. Your flight details will be shared soon"
+  - text: "Thanks. Your hotel details will be shared soon"
+
+  utter_city_going:
+  - text: "Which city you are going to?"
+
+  utter_city_leaving:
+  - text: "Which city are you leaving from?"
+
+  utter_date:
+  - text: "What is the travel date?"
+
+  utter_duration:
+  - text: "What is the travel duration"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
